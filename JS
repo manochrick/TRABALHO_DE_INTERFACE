@@ -1,0 +1,25 @@
+const btn = document.getElementsByClassName('btn btn-danger')[0]
+const btn2 = document.getElementById('button2')
+const resp = document.querySelector("h4")
+
+btn.addEventListener('click', () => {
+    const btnClass = btn.getAttribute('btn btn-danger');
+    if (btnClass === 'dark') {
+        //muda para o tema escuro
+        btn.setAttribute('btn btn-danger', 'light');
+        btn.textContent = '';
+        document.body.style.backgroundColor = "white";
+        document.h2.style.color = "white"
+
+        //'rgba(0,0,0,0.5)';
+    } else {
+        //volta para o tema claro
+        btn.textContent = 'Modo claro';
+        document.body.style.backgroundColor = "black";
+    }
+});
+
+
+btn2.addEventListener('click', () => {
+    resp.innerText = "O Shopping Universitário IESBserá uma plataforma de integração de vendas no ambiente universitário onde os pequenos comerciantes poderão cadastrar seus produtos com facilidade. Com filtros de campus, turno e categoria do produto nosso shopping oferta praticidade e acessibilidade entre vendas caseiras e compradores interessados."
+});
