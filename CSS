@@ -1,0 +1,26 @@
+/*ARQUIVO DE INTERFACE DO USUÁRIO*/
+body{
+    background-color: rgba(0, 0, 0, 0.918);
+}
+header{
+    background-color: rgb(241, 13, 13);
+    font-style: normal;
+    padding: 1%;
+}
+
+h2,h3,p,h4{
+    color: white;
+
+}
+main{
+    display: flex;
+}
+
+ul{
+    background-color: rgb(217,5,12);
+}
+
+nav li{
+    display: inline;
+    text-align: center;
+}
